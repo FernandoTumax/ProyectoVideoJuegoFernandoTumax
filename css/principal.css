@@ -124,6 +124,11 @@ a{
     cursor: pointer;
 }
 
+#espacio1{
+    color: transparent;
+    background: transparent;
+}
+
 .wrap1{
     width: 1250px;
     margin: 0px auto;
@@ -173,6 +178,7 @@ a{
     width: 100%;
     overflow: hidden;
     color: transparent;
+    background: transparent;
 }
 
 #header #logo{
@@ -336,13 +342,14 @@ aside h3{
     line-height: 49px;
     background: url("../img/pxgray.png"), white;
     box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f;
-    font-size: 30px;
+    font-size: 35px;
     font-family: "BebasNeue";
     font-weight: normal;
     letter-spacing: 2px;
     padding-left: 15px;
     margin-top: 30px;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 aside h3:first-child{
@@ -479,8 +486,84 @@ aside h3:first-child{
     color: #2f78bc;
 }
 
+#logeado{
+    margin-top: 15px;
+    display: none;
+}
+
+.titulos{
+    margin-top: 10px !important;
+    text-align: center;
+    font-size: 25px !important;
+    width: 256px !important;
+    margin-left: 11px;
+}
+
+#deslogeado{
+    display: block;
+}
+
+#usuario{
+    height: 465px !important;
+    width: 94% !important;
+}
+
+#usuario label{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+#espacio{
+    margin-top: 10px;
+	background: #393d3f;
+    color:white;
+    height: 30px;
+    width: 200px;
+    line-height: 30px;
+    padding: 4px;
+    margin-left: 20px;
+    font-size: 13px;
+    border-radius: 0px 0px 0px 5px;
+}
+
+.user{
+    width: 256px;
+    display: block;
+    color: #333;
+    text-align: center;
+    font-size: 18px;
+    font-family: "BebasNeue";
+    padding: 10px;
+    margin-left: 11px !important;
+    box-shadow: 0px 1px 0px #393d3f, 1px 2px 0px #393d3f, 2px 3px 0px #393d3f, 3px 4px 0px #393d3f;
+    margin-top: 36px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    transition: 300ms all;
+}
+
+#desconectarse{
+    text-align: center;
+    text-decoration: none;
+    padding-left: 95px;
+}
+
+#desconectar{
+    text-align: center;
+    padding-right: 4px;
+}
+
+.user:hover{
+    font-size: 22px;
+    color: white;
+    background: linear-gradient(to bottom, #3eb8a5 0%, #2ca0ca 100%);
+    text-shadow: 2px 2px 1px black;
+}
+
 #social{
     height: 220px;
+    margin-left: 26px;
 }
 
 #social a{
@@ -518,9 +601,9 @@ aside h3:first-child{
     transform: translateX(0%);
 }
 
-#musica{
+#music{
     width: 100%;
-    height: 350px;
+    height: 385px;
 }
 
 /*Articulos*/

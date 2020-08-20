@@ -110,18 +110,39 @@
                     <input type="button" value="L" class="icon" />
                 </form>
             </div>
-            <h3>Login</h3>
-            <div id="login" class="aside-box">
-                <form>
-                    <label id="user" class="icon">U</label>
-                    <input type="email" />
+            <div id="deslogeado">
+                <h3>Login</h3>
+                <div id="login" class="aside-box">
+                    <form>
+                        <label id="user" class="icon">U</label>
+                        <input type="email" />
 
-                    <label id="password" class="icon">w</label>
-                    <input type="password" />
+                        <label id="password" class="icon">w</label>
+                        <input type="password" />
 
-                    <input type="submit" value="Entrar" />
-                    <input type="reset" value="Limpiar" />
-                </form>
+                        <input type="submit" value="Entrar" />
+                        <input type="reset" value="Limpiar" />
+                    </form>
+                </div>
+            </div>
+            <div id="logeado">
+                <h3>Usuario</h3>
+                <div id="usuario" class="aside-box">
+                    <h3 class="titulos">Username: </h3>
+                    <p class="espacio" id="espacio1">
+
+                    </p>
+                    <h3 class="titulos">Email: </h3>
+                    <p class="espacio" id="espacio2">
+
+                    </p>
+                    <h3 class="titulos">Nombre Completo: </h3>
+                    <p class="espacio" id="espacio3">
+
+                    </p>
+                    <p>
+                    <h4 id="desconectar">¿Quieres desconectarte?</h4><a href="index.html" id="desconectarse">Desconectar</a></p>
+                </div>
             </div>
             <h3>REDES SOCIALES</h3>
             <div id="social" class="aside-box">
@@ -146,7 +167,8 @@
             </div>
             <h3>MUSICA</h3>
             <div id="music" class="aside-box">
-                <iframe src="https://open.spotify.com/embed/playlist/04JaCHbBXgpPQG6Bd8Ucux" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" id="musica"></iframe>
+                <iframe src="https://open.spotify.com/embed/playlist/04JaCHbBXgpPQG6Bd8Ucux" width="300" height="380"
+                    frameborder="0" allowtransparency="true" allow="encrypted-media" id="musica"></iframe>
             </div>
         </aside>
 
@@ -156,52 +178,54 @@
             <article>
                 <table class="table table-hover border">
                     <thead class="thead-dark">
-                      <tr>
-                        <th scope="col">No.</th>
-                        <th scope="col">Nombre: </th>
-                        <th scope="col">Compania: </th>
-                        <th scope="col">Plataforma: </th>
-                        <th scope="col">Progreso: </th>
-                        <th scope="col">Trofeos o Emblemas: </th>
-                      </tr>
+                        <tr>
+                            <th scope="col">No.</th>
+                            <th scope="col">Nombre: </th>
+                            <th scope="col">Compania: </th>
+                            <th scope="col">Plataforma: </th>
+                            <th scope="col">Progreso: </th>
+                            <th scope="col">Trofeos o Emblemas: </th>
+                        </tr>
                     </thead>
                     <tbody id="listaJuegos">
-                      <tr>
-                        <th scope="row">1</th>
-                        <td>Fallout 4</td>
-                        <td>Bethesda</td>
-                        <td>Playstation 4</td>
-                        <td>75%</td>
-                        <td>49 Trofeos</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">2</th>
-                        <td>Call of duty: Modern Warfare</td>
-                        <td>Activision</td>
-                        <td>PC</td>
-                        <td>50%</td>
-                        <td>35 Trofeos</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">3</th>
-                        <td>Lego Marvel Super Heroe 2</td>
-                        <td>Lego</td>
-                        <td>Xbox One</td>
-                        <td>85%</td>
-                        <td>59 Trofeos</td>
-                      </tr>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Fallout 4</td>
+                            <td>Bethesda</td>
+                            <td>Playstation 4</td>
+                            <td>75%</td>
+                            <td>49 Trofeos</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Call of duty: Modern Warfare</td>
+                            <td>Activision</td>
+                            <td>PC</td>
+                            <td>50%</td>
+                            <td>35 Trofeos</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Lego Marvel Super Heroe 2</td>
+                            <td>Lego</td>
+                            <td>Xbox One</td>
+                            <td>85%</td>
+                            <td>59 Trofeos</td>
+                        </tr>
                     </tbody>
-                  </table>
+                </table>
             </article>
             <article id="formulario">
                 <form>
                     <div class="form-group">
                         <label class="tituloFormulario">Ingrese un Nombre</label>
-                        <input type="text" class="form-control" id="nombreJuego" placeholder="Ingrese por favor un juego" name="juego" />
+                        <input type="text" class="form-control" id="nombreJuego"
+                            placeholder="Ingrese por favor un juego" name="juego" />
                     </div>
                     <div class="form-group">
                         <label class="tituloFormulario">Ingrese la compania</label>
-                        <input type="text" class="form-control" id="companiaJuego" placeholder="Ingrese la compania del juego" name="compania" />
+                        <input type="text" class="form-control" id="companiaJuego"
+                            placeholder="Ingrese la compania del juego" name="compania" />
                     </div>
                     <div class="form-group">
                         <label class="tituloFormulario">Seleccione una plataforma</label>
@@ -214,11 +238,13 @@
                     </div>
                     <div class="form-group">
                         <label class="tituloFormulario">Defina sus porcentaje</label>
-                        <input type="range" class="form-control-range" id="porcentajeJuego" name="porcentaje" min="0" max="100"/> 
+                        <input type="range" class="form-control-range" id="porcentajeJuego" name="porcentaje" min="0"
+                            max="100" />
                     </div>
                     <div class="form-group">
                         <label class="tituloFormulario">Ingrese sus trofeos</label>
-                        <input type="number" class="form-control" id="trofeoJuego" placeholder="Ingrese sus trofeos" name="trofeo" />
+                        <input type="number" class="form-control" id="trofeoJuego" placeholder="Ingrese sus trofeos"
+                            name="trofeo" />
                     </div>
                     <h2 id="guardar">Guardar</h2>
                 </form>
@@ -280,7 +306,8 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="js/formularioVidejuegos.js"></script>
+    <script type="text/javascript" src="js/formularioVideoJuegos.js"></script>
+    <script type="text/javascript" src="js/validacionUsuario.js"></script>
     <script type="text/javascript" src="Bootstrap 4/js/bootstrap.min.js"></script>
 </body>
 
