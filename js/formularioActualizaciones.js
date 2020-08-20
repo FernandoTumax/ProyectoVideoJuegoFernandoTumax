@@ -15,13 +15,18 @@ $(document).ready(function () {
     $("#guardar").click(function () {
         acumulador = acumulador + 1;
         var ordenLista = acumulador;
-        var nombreJuego = $("input[name='juego']").val();
-        var versionJuego = $("input[name='version']").val();
-        var seleccionPlataforma = String($("select[name='plataforma']").val());
-        var seleccionEstado = String($("select[name='estado']").val());
-            $("#listaActualizacion").append("<tr>" + "<th scope='row'>" + ordenLista + "</th>" + "<td>" + nombreJuego + "</td>" + "<td>" + "Version " + versionJuego + "</td>" + "<td>" + seleccionPlataforma + "</td>" + "<td>" + seleccionEstado + "</td>");
-            $("input[name='juego']").val("");
-            $("input[name='version']").val("");
-            formulario.slideToggle("slow");
+        var nombreJuego = $("#nombreJuego").val();
+        var versionJuego = $("#versionJuego").val();
+        var seleccionPlataforma = String($("#seleccionPlataforma").val());
+        var seleccionEstado = String($("#seleccionEstado").val());
+        $("#listaActualizacion").append("<tr>" + "<th scope='row'>" + ordenLista + "</th>" + "<td>" + nombreJuego + "</td>" + "<td>" + "Version " + versionJuego + "</td>" + "<td>" + seleccionPlataforma + "</td>" + "<td>" + seleccionEstado + "</td>");
+        $("#nombreJuego").val("");
+        $("#versionJuego").val("");
+        formulario.slideToggle("slow");
+
     });
+
+    
+
+
 });

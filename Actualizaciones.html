@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1/jquery-ui.structure.min.css" />
     <link rel="stylesheet" type="text/css" href="jquery-ui-1.12.1/jquery-ui.theme.min.css" />
     <script type="text/javascript" src="jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="jquery-validation/jquery.validate.min.js"></script>
     <link rel="stylesheet" type="text/css" href="Bootstrap 4/css/bootstrap.min.css" />
 </head>
 
@@ -212,21 +213,21 @@
                 </table>
             </article>
             <article id="formulario">
-                <form>
+                <form id="formActualizacion">
                     <div class="form-group">
                         <label class="tituloFormulario">Ingrese un Nombre</label>
                         <input type="text" class="form-control" id="nombreJuego"
-                            placeholder="Ingrese por favor un juego" name="juego" />
+                            placeholder="Ingrese por favor un juego" name="juego" required/>
                     </div>
                     <div class="form-group">
                         <label class="tituloFormulario">Ingrese la version reciente</label>
                         <input type="number" class="form-control" id="versionJuego"
-                            placeholder="Ingrese la version reciente del juego" name="version" />
+                            placeholder="Ingrese la version reciente del juego" name="version" required/>
                     </div>
                     <div class="form-group">
                         <label class="tituloFormulario">Seleccione una plataforma</label>
                         <select class="form-control" id="seleccionPlataforma" name="plataforma"
-                            aria-placeholder="Seleccione una plataforma">
+                            aria-placeholder="Seleccione una plataforma" required>
                             <option>PS4</option>
                             <option>Xbox One</option>
                             <option>PC</option>
@@ -236,7 +237,7 @@
                     <div class="form-group">
                         <label class="tituloFormulario">Seleccione el estado de la Actualizacion</label>
                         <select class="form-control" id="seleccionEstado" name="estado"
-                            aria-placeholder="Seleccine un estado">
+                            aria-placeholder="Seleccine un estado" required>
                             <option>En cola</option>
                             <option>Descargando</option>
                             <option>Instalando</option>
