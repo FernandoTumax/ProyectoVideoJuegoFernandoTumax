@@ -1,0 +1,15 @@
+Hola bienvenido a mi pagina :D
+
+para poder ingresar a la pagina necesitaras ciertos datos ya que si no los tienes o no los ingresas bien el proyecto tiene la funcion de no mostrar otra seccion
+los datos son los siguientes:
+
+correo: jtumax-2019013@kinal.edu.gt
+contraseña: jtumax2019013
+
+el proyecto agrega ciertos datos los que tu desees, no contiene base de datos ya que es un proyecto muy liviano y nunca surgio la necesidad de una base de datos.
+
+cuando le des desconectar directamente de enviara a la pagina index y no podras ver las otra secciones a menos que te logees otra vez.
+
+como dato curioso pasa encima del nombre de usuario, correo y nombre completo y veras algo bonito.
+
+GRACIAS POR VER MI PAGINA!!!!!! :D
