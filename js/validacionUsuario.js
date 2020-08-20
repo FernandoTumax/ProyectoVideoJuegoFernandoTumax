@@ -11,7 +11,9 @@ $(document).ready(function(){
         var formPassword = $("#formPassword").val();
 
         if(formPassword != "jtumax2019013"){
-            alert("La contraseña es incorrecta")
+            alert("La contraseña es incorrecta");
+        }else if(formName != "jtumax-2019013@kinal.edu.gt"){
+            alert("El correo es incorrecto");
         }else{
             localStorage.setItem("formEmail", formName);
         }
